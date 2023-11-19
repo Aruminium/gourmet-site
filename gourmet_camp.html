@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>gourmet-camp</title>
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+  <link rel="stylesheet" href="css/gourmet_camp.css">
+</head>
+
+<body>
+  <div class="warpper">
+    <header class="header">
+      <h1>
+        <img src="img/logo.png" alt="logo">
+      </h1>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li>
+            <a href="#" class="header__nav-link">Top</a>
+          </li>
+          <li>
+            <a href="#" class="header__nav-link">予約一覧</a>
+          </li>
+          <li>
+            <a href="#" class="header__nav-link">いいねリスト</a>
+          </li>
+          <li>
+            <a href="#" class="header__nav-link">マイページ</a>
+          </li>
+          <li>
+            <a href="#" class="header__nav-link">サービス規約</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <img src="img/top.jpg" alt="top">
+    <div class="search">
+      <form class="search__form">
+        <label class="search__form-label">お店を探す</label>
+        <input type="text" name="area" placeholder="エリア(例:札幌、東京)" class="search__form-input">
+        <input type="text" name="keyword" placeholder="キーワード(例:イタリアン、コスパ)" class="search__form-input">
+        <button type="submit" class="search__form-button">
+          <img src="img/icon_search.png" alt="icon_search" class="search__form-button-icon">
+          検索
+        </button>
+      </form>
+    </div>
+    <div class="container">
+      <main class="main">
+        <section>
+          <h2 class="section__heading">注目のエリア</h2>
+          <form class="area-form">
+            <button type="submit" name="area" value="sapporo" class="area-form__button">札幌</button>
+            <button type="submit" name="area" value="morioka" class="area-form__button">盛岡</button>
+            <button type="submit" name="area" value="sendai" class="area-form__button">仙台</button>
+            <button type="submit" name="area" value="utunomiya" class="area-form__button">宇都宮</button>
+            <button type="submit" name="area" value="tokyo" class="area-form__button">東京</button>
+            <button type="submit" name="area" value="yokohama" class="area-form__button">横浜</button>
+            <button type="submit" name="area" value="shizuoka" class="area-form__button">静岡</button>
+            <button type="submit" name="area" value="kanazawa" class="area-form__button">金沢</button>
+            <button type="submit" name="area" value="nagoya" class="area-form__button">名古屋</button>
+            <button type="submit" name="area" value="kyoto" class="area-form__button">京都</button>
+            <button type="submit" name="area" value="osaka" class="area-form__button">大阪</button>
+            <button type="submit" name="area" value="kobe" class="area-form__button">神戸</button>
+            <button type="submit" name="area" value="hiroshima" class="area-form__button">広島</button>
+            <button type="submit" name="area" value="matsuyama" class="area-form__button">松山</button>
+            <button type="submit" name="area" value="hakata" class="area-form__button">博多</button>
+            <button type="submit" name="area" value="naha" class="area-form__button">那覇</button>
+          </form>
+        </section>
+        <section>
+          <h2 class="section__heading">ジャンルで選ぶ</h2>
+          <form class="genre-form">
+            <button type="submit" name="genre" value="chinese" class="genre-form__button">
+              <img src="img/genre_chinese.jpg" alt="genre_chinese" class="img-responsive">
+              <span class="genre-figure__caption">
+                中 華
+              </span>
+            </button>
+            <button type="submit" name="genre" value="japanese" class="genre-form__button">
+              <img src="img/genre_japanese.jpg" alt="genre_japanese" class="img-responsive">
+              <span class="genre-figure__caption">和 食</span>
+            </button>
+            <button type="submit" name="genre" value="french" class="genre-form__button">
+              <img src="img/genre_french.jpg" alt="genre_french" class="img-responsive">
+              <span class="genre-figure__caption">
+                フレンチ
+              </span>
+            </button>
+            <button type="submit" name="genre" value="italian" class="genre-form__button">
+              <img src="img/genre_italian.jpg" alt="genre_italian" class="img-responsive">
+              <span class="genre-figure__caption">
+                イタリアン
+              </span>
+            </button>
+            <button type="submit" name="genre" value="sweets" class="genre-form__button">
+              <img src="img/genre_sweets.jpg" alt="genre_sweets" class="img-responsive">
+              <span class="genre-figure__caption">
+                スイーツ
+              </span>
+            </button>
+          </form>
+        </section>
+        <section>
+          <h2 class="section__heading">こだわりで選ぶ</h2>
+          <form class="keyword-form">
+            <button type="submit" name="keyword" value="ambience" class="keyword-form__button">雰囲気が良い</button>
+            <button type="submit" name="keyword" value="landscape" class="keyword-form__button">景観</button>
+            <button type="submit" name="keyword" value="reverside-terrace" class="keyword-form__button">川床</button>
+            <button type="submit" name="keyword" value="ocean-view" class="keyword-form__button">オーシャンビュー</button>
+            <button type="submit" name="keyword" value="customer-service" class="keyword-form__button">接客良い</button>
+            <button type="submit" name="keyword" value="cost-performance" class="keyword-form__button">コスパ</button>
+            <button type="submit" name="keyword" value="wine" class="keyword-form__button">ワイン</button>
+            <button type="submit" name="keyword" value="show" class="keyword-form__button">ショーがある</button>
+            <button type="submit" name="keyword" value="sushi" class="keyword-form__button">寿司</button>
+            <button type="submit" name="keyword" value="seafood" class="keyword-form__button">海鮮</button>
+            <button type="submit" name="keyword" value="turkey" class="keyword-form__button">トルコ料理</button>
+            <button type="submit" name="keyword" value="bar" class="keyword-form__button">バー</button>
+            <button type="submit" name="keyword" value="Fashionable" class="keyword-form__button">おしゃれ</button>
+            <button type="submit" name="keyword" value="celebrity-purveyor" class="keyword-form__button">芸能人御用達</button>
+          </form>
+        </section>
+        <section>
+          <h2 class="section__heading">ライターのおすすめ</h2>
+          <div class="recommend">
+            <article class="recommend__card">
+              <img src="img/writer_1.jpg" alt="writer_1" class="img-responsive">
+              <h3 class="recommend__card-title">究極の十割蕎麦</h3>
+              <p class="recommend__card-content">
+                全国から仕入れた蕎麦の実を、産地ごとの特性に合わせて挽き、持ち味を最大限に引き出す思考のそば。フレンチの技法も加えて繰り出されるSOBAコースは意外性に富んでいるが、実は基本に忠実な仕事がされています。香ばしい焼きそばがきもおすすめ。
+              </p>
+            </article>
+            <article class="recommend__card">
+              <img src="img/writer_2.jpg" alt="writer_2" class="img-responsive">
+              <h3 class="recommend__card-title">ケバブだけじゃない、トルコ料理</h3>
+              <p class="recommend__card-content">
+                トルコ料理というと日本ではケバブやドンドルマ（トルコ風アイス）くらいしか知られていませんが、実は世界三大料理の一つ。ハーブやヨーグルトを多用し、香辛料たっぷりのその味わいはまさに異国情緒。香味と酸味を中心に捉えた味わいをご堪能ください。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section>
+          <h2 class="section__heading">ユーザーレビュー</h2>
+          <div class="review">
+            <article class="review__card">
+              <div class="review__card-header">
+                <img src="img/icon_man.png" alt="icon_man">
+                <div>
+                  <strong>食いしん坊主</strong>
+                  <p>男性・東京都</p>
+                </div>
+              </div>
+              <h3 class="review__card-title">サービスがいまいち。。。</h3>
+              <p class="review__card-content">
+                レビューの高評価に期待して伺ったのですが、接客態度があまりに悪く印象は最悪。<br>確かにお料理は美味しかったですが、凝った仕事をしていても、そもそもどのような素材を利用してどんな調理法で供された物なのか一切説明がなかったので狐に摘まれたような印象でした。
+              </p>
+              <div class="review__card-figure">
+                <img src="img/review_1_1.jpg" alt="review_1_1" class="img-responsive">
+                <img src="img/review_1_2.jpg" alt="review_1_2" class="img-responsive">
+              </div>
+            </article>
+            <article class="review__card">
+              <div class="review__card-header">
+                <img src="img/icon_woman.png" alt="icon_woman">
+                <div>
+                  <strong>スイーツ大好き</strong>
+                  <p>女性・兵庫県</p>
+                </div>
+              </div>
+              <h3 class="review__card-title">内装の美しさに感動</h3>
+              <p class="review__card-content">
+                以前から友人と話題に上がっていたお店だったので楽しみにしていました。ヴィンデーじのかγっや赤で統一されたモダンな内装。あらゆるディテミールにミッドセンチュリーモダンを意識した作りでオーダー前にすでに満足！カフェメニューも充実していて、近くのパティスリーから仕入れているケーキも美味しゅうございました。
+              </p>
+              <div class="review__card-figure">
+                <img src="img/review_2_1.jpg" alt="review_2_1" class="img-responsive">
+                <img src="img/review_2_2.jpg" alt="review_2_2" class="img-responsive">
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+      <aside class="sidebar">
+        <a href="#">
+          <img src="img/banner_1.jpg" alt="banner_1">
+        </a>
+        <a href="#">
+          <img src="img/banner_2.jpg" alt="banner_2">
+        </a>
+      </aside>
+    </div>
+  </div>
+  <footer class="footer">
+    <aside class="footer__nav">
+      <ul class="footer__nav-list">
+        <li>
+          <a href="#" class="footer__nav-link">Top</a>
+        </li>
+        <li>
+          <a href="#" class="footer__nav-link">プライバシーポリシー</a>
+        </li>
+        <li>
+          <a href="#" class="footer__nav-link">会社概要</a>
+        </li>
+        <li>
+          <a href="#" class="footer__nav-link">サイトマップ</a>
+        </li>
+      </ul>
+    </aside>
+    <div class="footer__copylight">
+      <small>GourmetCamp© All Rights Reserved</small>
+    </div>
+  </footer>
+</body>
+
+</html>
